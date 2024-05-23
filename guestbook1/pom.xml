@@ -8,6 +8,13 @@
   <artifactId>guestbook1</artifactId>
   <packaging>war</packaging>
   
+    <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+	
   	<dependencies>
 		<dependency>
 		    <groupId>org.mariadb.jdbc</groupId>
