@@ -30,13 +30,12 @@
 	<br>
 	
 	<%
-		int cnt=0;
+		int cnt=list.size();
 		for(GuestBookVo vo: list) {
-			cnt+=1;
 	%>
 		<table width=510 border=1>
 			<tr>
-				<td><%= cnt %></td>
+				<td><%= cnt-- %></td>
 				<td><%= vo.getName() %></td>
 				<td><%= vo.getRegDate() %></td>
 				<td><a href="<%=request.getContextPath()%>/gb?a=deleteform&no=<%= vo.getNo() %>">삭제</a></td>
